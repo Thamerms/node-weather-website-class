@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit', (e) => {
                     console.log(data.location)
                     msgOne.textContent = data.location
                     console.log(data.forecast.summary + '\n' + data.forecast.temperature)
-                    msgTwo.textContent = data.forecast.summary + '- temp: ' + data.forecast.temperature + 'humadity:' + data.forecast.humadity 
+                    msgTwo.textContent = data.forecast.summary + '- temp: ' + data.forecast.temperature + ' humadity:' + data.forecast.humadity 
                 }
             })
         })} else {
