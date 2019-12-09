@@ -11,7 +11,8 @@ const forecast = (x, y, callback) => {
         } else {
             callback(undefined, {
                 summary:     body.daily.data[0].summary,
-                temperature: body.currently.temperature
+                temperature: body.currently.temperature,
+                humadity: body.daily.data[0].humidity
             })
         }
     })
